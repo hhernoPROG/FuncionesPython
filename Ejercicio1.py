@@ -30,15 +30,27 @@ def ordNums():
 lista = [] #Lista. 5 Datos por ahora...
 num = 0  #Este num va en la funcion. Son los numeros que pedimos y agregamos a la lista.
 
-def pedir():
-    i = 0   #CONTADOR
-    while i <= 5:
-        num = float(input("Ingresa un numero:"))
-        lista.append(num)
-        i += 1 #Sin esto el bucle es infinito.
+def pedidoNum(): #Definimos la funcion con la variable pedidoNum
+              i = 0 
+              while i <= 5:
+                      num = int(input("Ingresar un numero:"))
+                      lista.append(num)
+                      i += 1
+                                        
+def ordenarNums():
+        lista.sort()
+        listaPar = []
+        listaImpar = []
+        for i in lista:
+            if i % 2 == 0:
+                    listaPar.append(i)
+            else:
+                    listaImpar.append(i)
+        print("Numeros pares:{}".format(listaPar))
+        print("Numeros impares: {}".format(listaImpar))
 
-pedir()       
-print(lista)
+pedidoNum()
+ordenarNums()
 
                 
                   
