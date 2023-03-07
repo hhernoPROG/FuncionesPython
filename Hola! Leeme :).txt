@@ -1,0 +1,13 @@
+Hola!
+
+Me llamo Hernan, tengo 22 años. Soy de Argentina, Buenos Aires.
+Estoy aprendiendo Python, ya que es un Lenguaje simple a mi parecer, pero con un poder y logica desorbitante por detras.
+Se que no es un lenguaje que en el mercado sea un boom, pero como primer lenguaje de programacion lo recomiendo!
+
+En paralelo estoy realizando un Curso de Programacion JAVA Full Stack. En donde estaré viendot herramientas como VUE,Spring,JavaScript etc. 
+
+Ser front-end o ser back-end, todavia no me decido. Ya que me gusta todo!
+
+Si me leiste. Gracias por tu tiempo y por pispear mi humilde repositorio.
+
+Saludos!
