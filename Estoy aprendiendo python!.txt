@@ -1,0 +1,2 @@
+# IngresoDeNumerosPython
+Programa creado a través de un ejercicio de Python. Se ingresan numeros y luego se ordenan de mayor a menor. Después se ordenan entre pares e impares. Utilicé 2 funciones.
