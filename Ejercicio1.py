@@ -26,31 +26,41 @@ def ordNums():
                 listaImp.append(lista)
         else:
                 listaPar.index(lista)'''
-
-lista = [] #Lista. 5 Datos por ahora...
+#Codigo correcto.
+lista = [] #Lista. 6 Datos por ahora...
 num = 0  #Este num va en la funcion. Son los numeros que pedimos y agregamos a la lista.
 
-def pedidoNum(): #Definimos la funcion con la variable pedidoNum
-              i = 0 
-              while i <= 5:
-                      num = int(input("Ingresar un numero:"))
-                      lista.append(num)
-                      i += 1
+def pedidoNum(): #Definimos la funcion con la variable pedidoNum para el ingreso de datos.
+              i = 0 #Contador
+              while i <= 5: #Bucle para que ingrese hasta 6 numeros
+                      num = int(input("Ingresar un numero:")) #Ingreso de datos
+                      lista.append(num) #Realizamos un agregado de datos a la lista con .append
+                      i += 1 #Limitamos el bucle con el contador i += 1.
                                         
-def ordenarNums():
-        lista.sort()
-        listaPar = []
-        listaImpar = []
-        for i in lista:
-            if i % 2 == 0:
+def ordenarNums(): #Definimos la funcion ordenarNums para organizar los numeros, ya sean pares o impares.
+        lista.sort() #Ordenamos la lista de menor a mayor con .sort
+        listaPar = [] #listapar
+        listaImpar = [] #listaimpar
+        for i in lista:  #Bucle for para derivar la informacion.
+            if i % 2 == 0: #Con esta condicion definimos si es par. Si i % 2 es igual a 0. Es par.
                     listaPar.append(i)
-            else:
+            else:   #Si no. Impar.
                     listaImpar.append(i)
-        print("Numeros pares:{}".format(listaPar))
-        print("Numeros impares: {}".format(listaImpar))
+        print("Numeros pares:{}".format(listaPar))   #Print de listas ordenadas
+        print("Numeros impares: {}".format(listaImpar)) #Print de listas ordenadas
 
 pedidoNum()
 ordenarNums()
+
+#Ejemplo de ejecucion.
+'''Ingresar un numero:2
+Ingresar un numero:3
+Ingresar un numero:4
+Ingresar un numero:5
+Ingresar un numero:6
+Ingresar un numero:7
+Numeros pares:[2, 4, 6]
+Numeros impares: [3, 5, 7]'''
 
                 
                   
